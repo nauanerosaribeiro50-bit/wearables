@@ -4,132 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tecnologias Vestíveis (Wearables)</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: linear-gradient(120deg, #0a0f24, #1b1f3b);
-      color: white;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 900px;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    h1 {
-      color: #00bcd4;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #00bcd4;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.1em;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
-    .menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    button {
-      background: #00bcd4;
-      border: none;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 1em;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #0097a7;
-      transform: scale(1.05);
-    }
-
-    .content {
-      display: none;
-      animation: fadeIn 0.8s ease;
-    }
-
-    .content.active {
-      display: block;
-    }
-
-    .nav-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .back-btn, .next-btn {
-      background: transparent;
-      border: 2px solid #00bcd4;
-      color: #00bcd4;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
-
-    .back-btn:hover, .next-btn:hover {
-      background: #00bcd4;
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8em;
-      }
-      button {
-        width: 100%;
-      }
-      .nav-buttons {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <!-- HOME -->
+   
     <div id="home" class="content active">
       <h1>Tecnologias Vestíveis (Wearables)</h1>
       <p>O futuro está literalmente no seu corpo.</p>
@@ -147,15 +26,13 @@
       </footer>
     </div>
 
-    <!-- INTRODUÇÃO -->
+   
     <div id="introducao" class="content">
       <h2>O que são Tecnologias Vestíveis?</h2>
       <p>
         As <strong>tecnologias vestíveis</strong> (ou <em>wearables</em>) são dispositivos eletrônicos que 
         podem ser usados no corpo, como roupas ou acessórios, capazes de coletar, processar 
-        e enviar dados em tempo real.  
-        Elas conectam o corpo humano ao mundo digital e ajudam no monitoramento da saúde, 
-        comunicação e até no lazer.
+        e enviar dados em tempo real.
       </p>
       <div class="nav-buttons">
         <button class="back-btn" onclick="goHome()">← Voltar</button>
@@ -163,7 +40,7 @@
       </div>
     </div>
 
-    <!-- EXEMPLOS -->
+   
     <div id="exemplos" class="content">
       <h2>Exemplos de Tecnologias Vestíveis</h2>
       <p>
@@ -178,7 +55,7 @@
       </div>
     </div>
 
-    <!-- BENEFÍCIOS -->
+   
     <div id="beneficios" class="content">
       <h2>Benefícios</h2>
       <p>
@@ -193,7 +70,6 @@
       </div>
     </div>
 
-    <!-- DESAFIOS -->
     <div id="desafios" class="content">
       <h2>Desafios</h2>
       <p>
@@ -208,14 +84,13 @@
       </div>
     </div>
 
-    <!-- FUTURO -->
+  
     <div id="futuro" class="content">
       <h2>O Futuro dos Wearables</h2>
       <p>
         🚀 O futuro das tecnologias vestíveis é promissor:  
         roupas inteligentes, implantes conectados e dispositivos que se comunicam com 
-        <strong>inteligência artificial</strong> já estão em desenvolvimento.  
-        Em breve, o corpo humano será uma verdadeira interface digital.
+        <strong>inteligência artificial</strong> já estão em desenvolvimento.
       </p>
       <div class="nav-buttons">
         <button class="back-btn" onclick="showContent('desafios')">← Voltar</button>
@@ -224,16 +99,6 @@
     </div>
   </div>
 
-  <script>
-    function showContent(id) {
-      document.querySelectorAll(".content").forEach(el => el.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-
-    function goHome() {
-      document.querySelectorAll(".content").forEach(el => el.classList.remove("active"));
-      document.getElementById("home").classList.add("active");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
