@@ -1,1 +1,1 @@
-https://github.com/nauanerosaribeiro50-bit/wearables.git
+https://nauanerosaribeiro50-bit.github.io/wearables/
