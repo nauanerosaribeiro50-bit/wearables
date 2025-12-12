@@ -1,104 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tecnologias Vestíveis (Wearables)</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecnologias Vestíveis — Wearables</title>
+
+ 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-   
-    <div id="home" class="content active">
-      <h1>Tecnologias Vestíveis (Wearables)</h1>
-      <p>O futuro está literalmente no seu corpo.</p>
-
-      <div class="menu">
-        <button onclick="showContent('introducao')">🧠 Introdução</button>
-        <button onclick="showContent('exemplos')">⌚ Exemplos</button>
-        <button onclick="showContent('beneficios')">💡 Benefícios</button>
-        <button onclick="showContent('desafios')">⚙️ Desafios</button>
-        <button onclick="showContent('futuro')">🚀 Futuro</button>
-      </div>
-
-      <footer>
-        <p>Nauane Ribeiro</p>
-      </footer>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="#home">Wearables</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#introducao">Introdução</a>
+        <a href="#exemplos">Exemplos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#futuro">Futuro</a>
+      </nav>
     </div>
+  </header>
 
-   
-    <div id="introducao" class="content">
-      <h2>O que são Tecnologias Vestíveis?</h2>
-      <p>
-        As <strong>tecnologias vestíveis</strong> (ou <em>wearables</em>) são dispositivos eletrônicos que 
-        podem ser usados no corpo, como roupas ou acessórios, capazes de coletar, processar 
-        e enviar dados em tempo real.
-      </p>
-      <div class="nav-buttons">
-        <button class="back-btn" onclick="goHome()">← Voltar</button>
-        <button class="next-btn" onclick="showContent('exemplos')">Próximo →</button>
+  <main>
+    
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Tecnologias Vestíveis</h1>
+        <p class="lead">O futuro está literalmente no seu corpo. Dispositivos vestíveis conectam as pessoas ao mundo digital de forma contínua, tornando possível monitorar saúde, melhorar experiências e integrar serviços onde quer que você esteja.</p>
+        <p class="cta-row">
+          <a class="cta" href="#introducao">Saiba Mais</a>
+          <a class="cta ghost" href="#exemplos">Ver Exemplos</a>
+        </p>
       </div>
-    </div>
+    </section>
 
-   
-    <div id="exemplos" class="content">
-      <h2>Exemplos de Tecnologias Vestíveis</h2>
-      <p>
-        🕒 <strong>Smartwatches:</strong> Monitoram batimentos cardíacos, passos e notificações. <br><br>
-        🏃‍♀️ <strong>Pulseiras Fitness:</strong> Acompanham sono, calorias e desempenho físico. <br><br>
-        👓 <strong>Óculos Inteligentes:</strong> Mostram informações e permitem fotos e vídeos em tempo real. <br><br>
-        👕 <strong>Roupas Inteligentes:</strong> Possuem sensores que monitoram temperatura, postura e sinais vitais.
-      </p>
-      <div class="nav-buttons">
-        <button class="back-btn" onclick="showContent('introducao')">← Voltar</button>
-        <button class="next-btn" onclick="showContent('beneficios')">Próximo →</button>
+    
+    <section id="introducao" class="section">
+      <div class="container">
+        <h2>O que são Tecnologias Vestíveis?</h2>
+        <p>As tecnologias vestíveis, conhecidas como wearables, são dispositivos eletrônicos projetados para serem usados no corpo — como relógios, pulseiras, óculos ou roupas inteligentes. Eles coletam dados através de sensores, processam informações localmente ou na nuvem e comunicam resultados ao usuário e a outros sistemas. Além de monitorar sinais fisiológicos, esses dispositivos facilitam a comunicação, fornecem notificações contextuais e podem enriquecer atividades cotidianas com funcionalidades como pagamentos, navegação e assistência por voz.</p>
       </div>
-    </div>
+    </section>
+
+    
+    <section id="exemplos" class="section alt">
+      <div class="container">
+        <h2>Exemplos de Tecnologias Vestíveis</h2>
+        <p>Um dos exemplos mais conhecidos são os smartwatches, que combinam monitorização de sinais vitais, rastreamento de atividades e integração com o celular para receber chamadas e notificações. Também há as pulseiras fitness, voltadas para a saúde e condicionamento físico, que acompanham padrões de sono, gasto calórico e desempenho em treinos. Óculos inteligentes permitem projetar informações no campo de visão, registrar fotos e vídeos, ou executar aplicações de realidade aumentada. Por fim, roupas com sensores incorporados são usadas em aplicações que variam desde o monitoramento clínico até a otimização de postura e desempenho esportivo.</p>
+      </div>
+    </section>
 
    
-    <div id="beneficios" class="content">
-      <h2>Benefícios</h2>
-      <p>
-        ✅ Ajudam no cuidado com a saúde e bem-estar. <br><br>
-        ✅ Facilitam a comunicação e integração com outros dispositivos. <br><br>
-        ✅ Incentivam hábitos saudáveis através de dados em tempo real. <br><br>
-        ✅ Tornam o cotidiano mais prático e interativo.
-      </p>
-      <div class="nav-buttons">
-        <button class="back-btn" onclick="showContent('exemplos')">← Voltar</button>
-        <button class="next-btn" onclick="showContent('desafios')">Próximo →</button>
+    <section id="beneficios" class="section">
+      <div class="container">
+        <h2>Benefícios</h2>
+        <p>As tecnologias vestíveis oferecem benefícios claros para saúde e bem-estar, permitindo o acompanhamento contínuo de batimentos cardíacos, atividade física e sono, o que auxilia na prevenção e no manejo de doenças. Elas também tornam a interação com o mundo digital mais prática — notificações, pagamentos e assistentes pessoais ficam sempre ao alcance. Além disso, o feedback em tempo real incentiva a adoção de hábitos mais saudáveis e oferece dados que podem ser usados por profissionais de saúde para avaliações mais completas.</p>
       </div>
-    </div>
+    </section>
 
-    <div id="desafios" class="content">
-      <h2>Desafios</h2>
-      <p>
-        ⚠️ <strong>Privacidade:</strong> risco de vazamento de dados pessoais. <br><br>
-        ⚠️ <strong>Bateria:</strong> muitos dispositivos ainda têm pouca duração. <br><br>
-        ⚠️ <strong>Custo:</strong> preços altos limitam o acesso. <br><br>
-        ⚠️ <strong>Dependência:</strong> uso excessivo pode gerar distrações e ansiedade.
-      </p>
-      <div class="nav-buttons">
-        <button class="back-btn" onclick="showContent('beneficios')">← Voltar</button>
-        <button class="next-btn" onclick="showContent('futuro')">Próximo →</button>
+   
+    <section id="desafios" class="section alt">
+      <div class="container">
+        <h2>Desafios</h2>
+        <p>Apesar do potencial, os wearables enfrentam desafios importantes. A privacidade e a segurança dos dados são preocupações centrais: informações sensíveis podem ser expostas se não houver proteção adequada. A autonomia de bateria ainda é uma limitação técnica para muitos dispositivos, limitando uso contínuo. O custo de dispositivos avançados pode tornar o acesso desigual, e o uso excessivo pode gerar dependência digital, distrações e impacto na saúde mental se não for bem gerido.</p>
       </div>
-    </div>
+    </section>
 
-  
-    <div id="futuro" class="content">
-      <h2>O Futuro dos Wearables</h2>
-      <p>
-        🚀 O futuro das tecnologias vestíveis é promissor:  
-        roupas inteligentes, implantes conectados e dispositivos que se comunicam com 
-        <strong>inteligência artificial</strong> já estão em desenvolvimento.
-      </p>
-      <div class="nav-buttons">
-        <button class="back-btn" onclick="showContent('desafios')">← Voltar</button>
-        <button class="next-btn" onclick="goHome()">🏠 Voltar ao Início</button>
+   
+    <section id="futuro" class="section">
+      <div class="container">
+        <h2>O Futuro dos Wearables</h2>
+        <p>O futuro das tecnologias vestíveis aponta para uma integração ainda maior entre corpo e tecnologia: roupas inteligentes com sensores distribuídos, implantes para monitoramento contínuo, e dispositivos que utilizam inteligência artificial para interpretar dados em contexto. À medida que a conectividade e a miniaturização avançam, é provável que os wearables se tornem interfaces naturais para interagir com serviços digitais, contribuindo para ambientes mais responsivos e experiências pessoais mais ricas.</p>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>Desenvolvido por Nauane Ribeiro — informações sobre tecnologias vestíveis, atualizadas para estudos e apresentações.</p>
+      <p class="small">© <span id="year"></span> Wearables</p>
+    </div>
+  </footer>
+
+>
   <script src="script.js"></script>
 </body>
 </html>
